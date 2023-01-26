@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>網站架設 on 彥的筆記</title>
+    <link>https://wu-wenyan.github.io/tags/%E7%B6%B2%E7%AB%99%E6%9E%B6%E8%A8%AD/</link>
+    <description>Recent content in 網站架設 on 彥的筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 27 Jan 2023 03:12:33 +0800</lastBuildDate><atom:link href="https://wu-wenyan.github.io/tags/%E7%B6%B2%E7%AB%99%E6%9E%B6%E8%A8%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown語法</title>
+      <link>https://wu-wenyan.github.io/blogs/test/</link>
+      <pubDate>Fri, 27 Jan 2023 03:12:33 +0800</pubDate>
+      
+      <guid>https://wu-wenyan.github.io/blogs/test/</guid>
+      <description>1.內文 Hello world
+2.標題:
+一級標題 二集標題 3.粗體: 嗨你好，我是彥
+4.斜體: 我是個高中生
+5.有序序列
+彥 H H 小真冬 6.無序序列
+Hello what Hi 7.引用
+Hello
+8.超連結 點我 H
+9.圖片 10.單行程式碼
+hello
+11.多行程式碼
+print(&amp;#34;hi&amp;#34;) print(&amp;#34;hi&amp;#34;) 12.表格
+Name Age Bob 27 Alice 23 </description>
+    </item>
+    
+  </channel>
+</rss>
