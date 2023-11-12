@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on 彥的筆記</title>
-    <link>https://wu-wenyan.github.io/blogs/</link>
-    <description>Recent content in Blogs on 彥的筆記</description>
+    <title>Python on 彥的筆記</title>
+    <link>https://wu-wenyan.github.io/tags/python/</link>
+    <description>Recent content in Python on 彥的筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 12 Nov 2023 08:36:33 +0800</lastBuildDate><atom:link href="https://wu-wenyan.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Nov 2023 08:36:33 +0800</lastBuildDate><atom:link href="https://wu-wenyan.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>看盤小助理之 Line Notify 即時通知</title>
       <link>https://wu-wenyan.github.io/blogs/%E7%9C%8B%E7%9B%A4%E5%B0%8F%E5%8A%A9%E7%90%86/</link>
@@ -23,28 +23,6 @@
       
       <guid>https://wu-wenyan.github.io/blogs/%E7%B6%B2%E8%B7%AF%E7%88%AC%E8%9F%B2%E4%B9%8B-covid-19-%E7%86%B1%E9%96%80%E6%96%87%E7%AB%A0%E8%A8%8E%E8%AB%96/</guid>
       <description>小論文pdf 程式碼: # 匯入模組 import re import requests import jieba import matplotlib.pyplot as plt import json import numpy as np from wordcloud import WordCloud from PIL import Image from bs4 import BeautifulSoup import os # API路徑 url = &amp;#39;https://www.dcard.tw/service/api/v2/forums/2019_ncov/posts?popular=true&amp;amp;limit=100&amp;#39; # 檢查伺服器連線狀態，連線成功=200 r = requests.get(url) print(r.status_code) if (r.status_code == requests.codes.ok): print(&amp;#34;連線成功!&amp;#34;) print() # 網頁內容轉換json格式 posts = list(requests.get(url).json()) counter = 0 # json解析 def printing(): os.remove(r&amp;#39;test.txt&amp;#39;) #文件夾 global counter for post in posts: counter +=1 print(&amp;#34;貼文熱門編號 :&amp;#34;, counter) print(&amp;#34;板類 :&amp;#34;, post[&amp;#39;forumName&amp;#39;]) print(&amp;#34;標題 :&amp;#34;, post[&amp;#39;title&amp;#39;]) #print(&amp;#34;內文 :&amp;#34;, post[&amp;#39;excerpt&amp;#39;]) print(&amp;#34;按讚 :&amp;#34;, post[&amp;#39;likeCount&amp;#39;]) print(&amp;#34;回應 :&amp;#34;, post[&amp;#39;commentCount&amp;#39;]) print(&amp;#34;日期時間 :&amp;#34;, post[&amp;#39;createdAt&amp;#39;]) js = post[&amp;#39;title&amp;#39;] file = open(&amp;#39;test.</description>
-    </item>
-    
-    <item>
-      <title>Markdown語法</title>
-      <link>https://wu-wenyan.github.io/blogs/test/</link>
-      <pubDate>Fri, 27 Jan 2023 03:12:33 +0800</pubDate>
-      
-      <guid>https://wu-wenyan.github.io/blogs/test/</guid>
-      <description>1.內文 Hello world
-2.標題:
-一級標題 二集標題 3.粗體: 嗨你好，我是彥
-4.斜體: 我是個高中生
-5.有序序列
-彥 H H 123 6.無序序列
-Hello what Hi 7.引用
-Hello
-8.超連結 點我 H
-9.圖片 10.單行程式碼
-hello
-11.多行程式碼
-print(&amp;#34;hi&amp;#34;) print(&amp;#34;hi&amp;#34;) 12.表格
-Name Age Bob 27 Alice 23 </description>
     </item>
     
   </channel>

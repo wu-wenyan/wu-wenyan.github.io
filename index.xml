@@ -6,7 +6,25 @@
     <description>Recent content on 彥的筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 27 Jan 2023 03:12:33 +0800</lastBuildDate><atom:link href="https://wu-wenyan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Nov 2023 08:36:33 +0800</lastBuildDate><atom:link href="https://wu-wenyan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>看盤小助理之 Line Notify 即時通知</title>
+      <link>https://wu-wenyan.github.io/blogs/%E7%9C%8B%E7%9B%A4%E5%B0%8F%E5%8A%A9%E7%90%86/</link>
+      <pubDate>Sun, 12 Nov 2023 08:36:33 +0800</pubDate>
+      
+      <guid>https://wu-wenyan.github.io/blogs/%E7%9C%8B%E7%9B%A4%E5%B0%8F%E5%8A%A9%E7%90%86/</guid>
+      <description>流程圖如上 小論文pdf 程式碼: #--------------------------載入模組------------------------------ import requests from bs4 import BeautifulSoup import time from datetime import datetime #--------------------------參數設定------------------------------ n_time = datetime.now() #現在時間 d_time1 = datetime.strptime(str(datetime.now().date())+&amp;#34;9:00&amp;#34;,&amp;#34;%Y-%m-%d%H:%M&amp;#34;) #開盤時間 9:00 d_time2 = datetime.strptime(str(datetime.now().date())+&amp;#34;13:30&amp;#34;,&amp;#34;%Y-%m-%d%H:%M&amp;#34;) #收盤時間 13:30 #-----Line Notify----- token = &amp;#39;sSnk6ptHXzweoZtU29YzLVoufk7CMh0pD6JF8CdCqQ5&amp;#39; #權杖代碼 #定義send_message,傳入權杖(token)和要推送的字串(msg)來達到字典型態。 def send_message(token,msg): #Line Notify 推送已post的方式提交請求，因此要定義「headers」它是字點型態 #其中一個索引key名稱「Authorization」對應的值，是由持有人(Bearer)和權杖(token)組成的字串 token = &amp;#39;sSnk6ptHXzweoZtU29YzLVoufk7CMh0pD6JF8CdCqQ5&amp;#39; haeaders = { &amp;#39;Authorization&amp;#39;:&amp;#34;Bearer &amp;#34;+token, &amp;#34;Content-Type&amp;#34;:&amp;#34;application/x-www-from-urlencoded&amp;#34; } #將要推送的訊息字串存在字典內，放進Message的索引中 payload = {&amp;#34;message&amp;#34;:msg} #以post的方式，向&amp;#39;https://notify-api.line.me/api/notify&amp;#39;提出請求 r = requests.post(&amp;#39;https://notify-api.line.me/api/notify&amp;#39;,headers = haeaders,params = payload) #可以做到例外排除，將請求的回傳用r接起，並把這個請求的執行狀態作為send_messaage函數的回傳 return r.status_code #如果請求成功 r.</description>
+    </item>
+    
+    <item>
+      <title>網路爬蟲之-covid-19-熱門文章討論</title>
+      <link>https://wu-wenyan.github.io/blogs/%E7%B6%B2%E8%B7%AF%E7%88%AC%E8%9F%B2%E4%B9%8B-covid-19-%E7%86%B1%E9%96%80%E6%96%87%E7%AB%A0%E8%A8%8E%E8%AB%96/</link>
+      <pubDate>Sun, 12 Nov 2023 07:59:33 +0800</pubDate>
+      
+      <guid>https://wu-wenyan.github.io/blogs/%E7%B6%B2%E8%B7%AF%E7%88%AC%E8%9F%B2%E4%B9%8B-covid-19-%E7%86%B1%E9%96%80%E6%96%87%E7%AB%A0%E8%A8%8E%E8%AB%96/</guid>
+      <description>小論文pdf 程式碼: # 匯入模組 import re import requests import jieba import matplotlib.pyplot as plt import json import numpy as np from wordcloud import WordCloud from PIL import Image from bs4 import BeautifulSoup import os # API路徑 url = &amp;#39;https://www.dcard.tw/service/api/v2/forums/2019_ncov/posts?popular=true&amp;amp;limit=100&amp;#39; # 檢查伺服器連線狀態，連線成功=200 r = requests.get(url) print(r.status_code) if (r.status_code == requests.codes.ok): print(&amp;#34;連線成功!&amp;#34;) print() # 網頁內容轉換json格式 posts = list(requests.get(url).json()) counter = 0 # json解析 def printing(): os.remove(r&amp;#39;test.txt&amp;#39;) #文件夾 global counter for post in posts: counter +=1 print(&amp;#34;貼文熱門編號 :&amp;#34;, counter) print(&amp;#34;板類 :&amp;#34;, post[&amp;#39;forumName&amp;#39;]) print(&amp;#34;標題 :&amp;#34;, post[&amp;#39;title&amp;#39;]) #print(&amp;#34;內文 :&amp;#34;, post[&amp;#39;excerpt&amp;#39;]) print(&amp;#34;按讚 :&amp;#34;, post[&amp;#39;likeCount&amp;#39;]) print(&amp;#34;回應 :&amp;#34;, post[&amp;#39;commentCount&amp;#39;]) print(&amp;#34;日期時間 :&amp;#34;, post[&amp;#39;createdAt&amp;#39;]) js = post[&amp;#39;title&amp;#39;] file = open(&amp;#39;test.</description>
+    </item>
+    
     <item>
       <title>Markdown語法</title>
       <link>https://wu-wenyan.github.io/blogs/test/</link>
@@ -18,7 +36,7 @@
 一級標題 二集標題 3.粗體: 嗨你好，我是彥
 4.斜體: 我是個高中生
 5.有序序列
-彥 H H 小真冬 6.無序序列
+彥 H H 123 6.無序序列
 Hello what Hi 7.引用
 Hello
 8.超連結 點我 H
@@ -30,59 +48,12 @@ Name Age Bob 27 Alice 23 </description>
     </item>
     
     <item>
-      <title>Render Math With Mathjax</title>
-      <link>https://wu-wenyan.github.io/blogs/math/</link>
-      <pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
-      
-      <guid>https://wu-wenyan.github.io/blogs/math/</guid>
-      <description>Mathjax Math equations can be rendered using Mathjax syntax with AMS symbol support.
-Optionally enable this on a per-page basis by adding mathjax: true to your frontmatter.
-Then, use $$ ... $$ on a line by itself to render a block equation:
-$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &amp;lt; \text{negligible} $$
-The raw version is:
-$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &amp;lt; \text{negligible} $$ Write in-line equations with \\( .</description>
-    </item>
-    
-    <item>
       <title>Image Gallery</title>
       <link>https://wu-wenyan.github.io/gallery/</link>
       <pubDate>Sat, 25 Jun 2022 18:35:46 +0530</pubDate>
       
       <guid>https://wu-wenyan.github.io/gallery/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax</title>
-      <link>https://wu-wenyan.github.io/blogs/markdown-syntax/</link>
-      <pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
-      
-      <guid>https://wu-wenyan.github.io/blogs/markdown-syntax/</guid>
-      <description>Paragraph Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga.</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://wu-wenyan.github.io/blogs/emoji-support/</link>
-      <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
-      
-      <guid>https://wu-wenyan.github.io/blogs/emoji-support/</guid>
-      <description>Emoji can be enabled in a Hugo project in a number of ways. :zap:
-Emoji Support The emojify function can be called directly in templates or Inline Shortcodes.
-To enable emoji globally, set enableEmoji to true in your site’s configuration and then you can type emoji shorthand codes directly in content files; e.g.
-The Emoji cheat sheet is a useful reference for emoji shorthand codes.
-N.B. The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform.</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://wu-wenyan.github.io/blogs/placeholder-text/</link>
-      <pubDate>Sat, 03 Apr 2021 22:41:10 +0530</pubDate>
-      
-      <guid>https://wu-wenyan.github.io/blogs/placeholder-text/</guid>
-      <description>Lorem est tota propiore conpellat pectoribus de pectora summo.
-Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.
-Exierant elisi ambit vivere dedere Duce pollice Eris modo Spargitque ferrea quos palude Rursus nulli murmur; hastile inridet ut ab gravi sententia!</description>
     </item>
     
   </channel>
