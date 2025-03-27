@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台南景點介紹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* 平滑滾動 */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* 標題 & 清單區塊 */
+        .header {
+            text-align: center;
+            border: 1px dashed gray;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+        ul li {
+            display: inline-block;
+            text-align: center;
+            background-color: #D9FFFF;
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        ul li:hover {
+            background-color: #A0E0E0;
+        }
+        ul li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        /* 文章區塊 - 使用 grid 佈局 */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .article {
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .blue {
+            color: #007BFF;
+        }
+        /* 圖片設計 */
+        .article img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+        }
+        /* 響應式設計：小螢幕時變成單欄 */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 標題 & 清單區塊 -->
+    <div class="header">
+        <h1 style="color: grey;">台南景點介紹</h1>
+        <ul>
+            <li><a href="#sicao">四草綠色隧道</a></li>
+            <li><a href="#salt">井仔腳瓦盤鹽田</a></li>
+            <li><a href="#chihkan">赤崁樓</a></li>
+            <li><a href="#confucius">台南孔廟</a></li>
+        </ul>
+    </div>
+
+    <!-- 文章區塊 -->
+    <div class="container">
+        <div class="article" id="sicao">
+            <h1 class="blue">四草綠色隧道</h1>
+            <img src="https://www.swcoast-nsa.gov.tw/image/13063/1024x768" alt="四草綠色隧道">
+            <p>四草綠色隧道在台江國家公園內，裡面有溼地及豐富的生態資源，可以坐船遊覽由紅樹林交織成的綠色隧道，超肩帶的招潮蟹、彈塗魚與紅樹林，體會不一樣的大自然感受。</p>
+        </div>
+        <div class="article" id="salt">
+            <h1 class="blue">井仔腳瓦盤鹽田</h1>
+            <img src="https://www.swcoast-nsa.gov.tw/image/2506/1024x768" alt="井仔腳瓦盤鹽田">
+            <p>井仔腳瓦盤鹽田是北門的第一座鹽田，西元1818年開始曬鹽，因人工成本過高，在 2002年停止曬鹽，鹽田漸漸荒廢，目前開發為觀光景點，遊客在此可體驗傳統曬鹽、挑鹽與收鹽。</p>
+        </div>
+        <div class="article" id="chihkan">
+            <h1 class="blue">赤崁樓</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/%E5%8F%B0%E5%8D%97_%E8%B5%A4%E5%B4%81%E6%A8%93.jpg/1200px-%E5%8F%B0%E5%8D%97_%E8%B5%A4%E5%B4%81%E6%A8%93.jpg" alt="赤崁樓">
+            <p>1653年為當時進佔臺灣南部之荷人所建，最初稱為「普羅民遮城」，與安平的「熱蘭遮城」遙遙
+        </div>
+        <div class="article" id="confucius">
+            <h1 class="blue">台南孔廟</h1>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNrKXfuKP1LErZEQWRRU3y-a1-K3Qx0z0BbRCqt=s1360-w1360-h1020" alt="">            <p>全臺首學」臺灣的第一座孔子廟。臺南孔子廟創建於明永曆19年（1665年），當時稱為「先師聖廟」，至今已有三百多年的歷史，由島上第一個漢人政權鄭氏王朝所創立，為的是在臺開辦教育，培養為國效命的人才。
+        </div>
