@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作業</title>
+    <style>
+        div{
+            font-family: cursive;
+        }
+        .container{
+            display: flex;
+            flex-direction: column; /* 改為垂直排列 */
+            background-color: rgb(225, 231, 236);
+            align-items: center; /* 內容水平置中 */
+            border-radius: 5px;/*圓角*/
+        }
+        .main-content{
+            display: flex;
+            background-color: rgb(150, 174, 174);
+            border-radius: 5px;/*圓角*/
+            padding:10px;
+            box-sizing: border-box; /* 包含 padding 和 border */
+            margin-top: 3px; /* 與標題間隔 */
+        }
+        h3{
+            margin: 10px;
+            font-size:20px;
+            text-shadow: rgb(46, 98, 136) 1px 1px 10px ;
+            text-align: center;
+            font-family: cursive;
+        }
+        .left-section{
+            width: 25%;
+            background-color: rgb(85, 127, 156);
+            padding:10px;
+            border-radius:5px;
+            display: flex;
+            flex-direction: column; /* 名字在圖片上方垂直排列 */
+            align-items: center; /* 名字和圖片水平置中 */
+        }
+        .left-section img{
+            width: 100%; /* 圖片寬度填滿父容器 */
+            height: auto; /* 高度根據圖片原始比例自動調整 */
+            margin-top: 5px; /* 圖片與名字間隔 */
+            object-fit: cover; /* 保持圖片比例，並填滿容器，可能會裁剪部分圖片 */
+            border-radius: 5px; /*圓角*/
+        }
+        .right-section{
+            width: 75%;
+            background-color: rgb(181, 149, 230);
+            padding:3px;
+            border-radius:8px;
+            display: flex; /* 內部左右分割 */
+        }
+        .right-left{
+            width: 50%;
+            background-color: lightcyan; /* 方便觀察 */
+            padding: 3px;
+            border-radius: 5px;
+            box-sizing: border-box; /* 包含 padding */
+        }
+        .right-right{
+            width: 50%;
+            background-color: lightgoldenrodyellow; /* 方便觀察 */
+            padding: 3px;
+            border-radius: 5px;
+            box-sizing: border-box; /* 包含 padding */
+            margin-left: 3px; /* 與左邊區塊間隔 */
+        }
+        .a{
+            font-style:normal;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: red;
+        }
+        .b{
+            font-style:normal;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: rgb(180, 211, 240);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>標題：抬槓</h3>
+    </div>
+    <div class="main-content">
+        <div class="left-section" style="font-size: 30px;text-shadow: rgb(134, 235, 195) 1px 1px 13px ;
+">
+            吳文彥
+            <img src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t39.30808-6/487503714_3930249863956016_7365213624789115988_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=0Njg4CkEEBMQ7kNvwGfSY8l&_nc_oc=AdmHb78qS8FNQg7R0aEyEH-aeTt03ru_MnvJBfYihkZDkcdk0V53A_NarcICIajW9VA&_nc_zt=23&_nc_ht=scontent.fkhh1-2.fna&_nc_gid=xd3-BXMPX1Qelhet9zxZFA&oh=00_AfHkmEra3TK8NjkI07P0rAwfoTkbGII7iz2nQMcgnYWzTA&oe=6818A7AA" alt="吳文彥" >
+        </div>
+        <div class="right-section">
+            <div class="right-left">hi 你好，我也不知道要說啥。對所以我們就說一些無關緊要的填充字數把這個大～格～子～填～好～填～滿～，開玩笑的。
+                <div class="a">正文開時~~~</div>
+                <div>隨便自我介紹一下吧，我的英文極其糟糕，哈哈ㄏ...<div class="a">但我對程式設計很有熱情(^ ^)</div>這是個很矛盾的事。</div>
+            </div>
+            <div class="right-right">雖然看不懂英文，但是我可以不靠任何參考資料的寫出基礎的演算法及資料結構了。這種能力是我在讀高職時當手公假自學的。蠻好笑的一個討厭讀書的小孩，因為不想乖乖坐在教室裡、想要過上自己想要的生活，所以去公假自學藉此還慢慢地提升了英文能力。
+                <div class="b" style="text-shadow: rgb(46, 98, 136) 1px 1px 10px ;
+">屠龍者，終將成為惡龍。</div>目前我精通python，C/C++/C#後者則是在考檢定及競賽煉成的。我考過APCS 4/4級分，競賽的話工科賽電腦軟體設計第八名。
+            </div>
+        </div>
+    </div>
+</body>
+</html>
