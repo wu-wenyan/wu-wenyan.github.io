@@ -1,0 +1,10 @@
+.list{
+    display:flex;
+    /*讓下一層水平排列*/
+}
+.item{
+    background-color: gray;
+    flex:none;
+    width:280px;
+    margin:10px;
+}
