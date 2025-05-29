@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dorm2-5</title>
+</head>
+<body>
+    <div>
+        <span onclick="changetoabout()">關於我</span>
+        <span onclick="changetoexps();">學經歷(點我)</span>
+    </div>
+    <br/>
+    <div id="about">大家好，我是吳同學</div>
+    <div id="exps" style="display:none">我是南台資工系的學生</div>
+    
+    <script>
+        function changetoexps(){
+            //取得標籤物件
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            //操作標籤物件
+            aboutDiv.style.display="none";
+            expsDiv.style.display="block"
+        }
+        function changetoabout(){
+            //取得標籤物件
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            //操作標籤物件
+            aboutDiv.style.display="block";
+            expsDiv.style.display="none"
+        }
+    </script>
+</body>
+</html>
