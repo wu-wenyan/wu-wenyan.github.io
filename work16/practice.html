@@ -30,8 +30,15 @@
     <button onclick="add2()">加入購物車</button>
 
     <script>
-        localStorage.setItem("total",0);
         let total=0
+        if(localStorage.getItem("total")!="0"){
+            let t=localStorage.getItem("total")
+            total=parseInt(t);
+        }
+        else{
+            localStorage.setItem("total",total);
+        }
+        
         console.log(total)
         function sum(){
             document.getElementById("total").innerHTML=total;
